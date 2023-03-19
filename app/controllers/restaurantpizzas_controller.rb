@@ -4,10 +4,10 @@ class RestaurantpizzasController < ApplicationController
     rescue_from ActiveRecord::RecordInvalid, with: :render_unprocessable_entity_response
 
 
-    def index
-        restaurantpizzas = Restaurantpizza.all 
-        render json: restaurantpizzas, except: [:created_at, :updated_at], include: :pizza
-    end
+    # def index
+    #     restaurantpizzas = Restaurantpizza.all 
+    #     render json: restaurantpizzas, except: [:created_at, :updated_at], include: :pizza
+    # end
    
     def update
         restaurantpizza = find_restaurantpizza

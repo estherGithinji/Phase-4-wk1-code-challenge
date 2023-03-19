@@ -15,24 +15,24 @@ class PizzasController < ApplicationController
 
     end
 
-    def create
-        pizza = Pizza.create!(pizza_params)
-        render json: pizza, status: :created
-    end
+    # def create
+    #     pizza = Pizza.create!(pizza_params)
+    #     render json: pizza, status: :created
+    # end
 
-    def update
-        pizza = find_pizza
-        pizza.update!(pizza_params)
-        render json: pizza, status: :accepted
+    # def update
+    #     pizza = find_pizza
+    #     pizza.update!(pizza_params)
+    #     render json: pizza, status: :accepted
        
-    end
+    # end
 
-    def destroy
-        pizza = find_pizza
-        pizza.destroy
-        head :no_content
+    # def destroy
+    #     pizza = find_pizza
+    #     pizza.destroy
+    #     head :no_content
 
-    end
+    # end
 
     private
 

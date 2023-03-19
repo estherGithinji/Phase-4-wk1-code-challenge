@@ -15,17 +15,17 @@ class RestaurantsController < ApplicationController
 
     end
 
-    def create
-        restaurant = Restaurant.create!(restaurant_params)
-        render json: restaurant, status: :created
-    end
+    # def create
+    #     restaurant = Restaurant.create!(restaurant_params)
+    #     render json: restaurant, status: :created
+    # end
 
-    def update
-        restaurant = find_restaurant
-        restaurant.update!(restaurant_params)
-        render json: restaurant, status: :accepted
+    # def update
+    #     restaurant = find_restaurant
+    #     restaurant.update!(restaurant_params)
+    #     render json: restaurant, status: :accepted
        
-    end
+    # end
 
     def destroy
         restaurant = find_restaurant
