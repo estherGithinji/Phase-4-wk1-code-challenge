@@ -26,17 +26,18 @@ Things you may want to cover:
 * Models
 You need to create the following relationships:
 
-- A `Restaurant` has many `Pizza`s through `RestaurantPizza`
+A `Restaurant` has many `Pizza`s through `RestaurantPizza`
 
-- A `Pizza` has many `Restaurants through `RestaurantPizza`
+A `Pizza` has many `Restaurants through `RestaurantPizza`
 
-- A `RestaurantPizza` belongs to a `Restaurant` and belongs to a `Pizza`
+A `RestaurantPizza` belongs to a `Restaurant` and belongs to a `Pizza`
 
 * Validations
 `Restaurantpizza `must have `price` between 1 and 30
 
 * Routes
 The following have been set up
+
 1. Get/restaurants => here we'll use an index acton
 2. Get/restaurants/:id => here we'll use a show action 
 : if the specific id is not found it should return an error
